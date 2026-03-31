@@ -1,6 +1,5 @@
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-</style>
+
 
 :root {
 	--color-primary:    #1a1a2e;
@@ -35,7 +34,7 @@ body{
 h1{
 	font-size: 4rem;
 	line-height: 1.5;
-	color: var(--color-text);
+	color: var(--color-surface);
 }
 
 h2{
@@ -70,11 +69,67 @@ main{
 	padding: var(--space-md); background-color: var(--color-surface);
 }
 
-.box{
+.card{
 	padding: var(--space-md);
 	margin: var(--space-sm);
 	border: 2px solid var(--color-muted);
 	border-radius: 8px;
+	box-shadow: 0 0 0 3px var(--color-accent) ;
 }
+
+a:link {color: var(--color-secondary); transition: 0.5s;}
+a:visited {color: var(--color-muted);}
+a:hover{color: var(--color-accent);}
+a:active{transform: scale(0.95);}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background: white;
+	padding: var(--space-sm) var(--space-md);
+}
+
+.nav-links{
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+	transition: color 0.2s ;
+	list-style: none;
+}
+
+.nav-links a.active {
+	border-bottom: 2px solid var(--color-accent);
+	color: var(--color-accent);
+	font-weight: bold;
+}
+
+.page-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px,1fr);
+	gap: 1.5rem;
+}
+
+.sidebar-layout{
+	display: grid;
+	grid-template-columns: 1fr 280px;
+	gap: var(--space-md);
+}
+
+.featured-card{
+	grid-column: span 2;
+}
+
+.card{
+	transition: transform 0.2s;
+}
+
+.card:hover{
+	transform: translateY(-4px);
+}
+
 
 

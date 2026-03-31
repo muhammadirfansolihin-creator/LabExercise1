@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
 	<meta name="description" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
 </head>
 
 <body>
-	<nav></nav>
+	<header>
+		<h1>Contact Me</h1>
+	</header>
+	<nav>
+		<ul>
+			<a href="index.html" class="active" >Home</a>
+			<a href="about.html" class="active">About Me</a>
+			<a href="skills.html" class="active">Skills</a>
+			<a href="academic.html" class="active">Academic Record</a>
+			<a href="projects.html" class="active">Projects</a>
+			<a href="contact.html" class="active">Contact Me</a>
+		</ul>
+	</nav>
 
 	<main>
 		<section>
-			<h2>Contact</h2>
+			
 			<form action="#" method="post">
-				<fieldset style="border: 2px solid navy; padding: 10px;">
+				<fieldset>
 					<legend>Contact Information</legend>
 
 					<label for="name">Name:</label>
-					<input type="text" id= "name" name="name" required maxlength="60" placeholder="Your Name" style="font-size: 14px;">
+					<input type="text" id= "name" name="name" required maxlength="60" placeholder="Your Name">
 					<br><br>
 
 					<label for="email">Email:</label>
@@ -34,7 +46,7 @@
 					<br><br>
 
 					<label for="range">Rating (0-10):</label>
-					<input type="range" id="range" name="range" min="0" max="10" style="background-color: #f0f0f0;">
+					<input type="range" id="range" name="range" min="0" max="10">
 					<br><br>
 
 					<p>Interest:</p>
@@ -60,7 +72,7 @@
 					<br><br>
 
 					<label for="message">Note:</label><br>
-					<textarea id="message" name="message" style="font-size:16px;"></textarea>
+					<textarea id="message" name="message"></textarea>
 					<br><br>
 
 					<button type="submit">Submit Form</button>
@@ -69,6 +81,6 @@
 			</form>
 		</section>
 	</main>	
-
+<footer></footer>
 </body>
 </html>
