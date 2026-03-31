@@ -32,3 +32,49 @@ body{
 	color: var(--color-text);
 }
 
+h1{
+	font-size: 4rem;
+	line-height: 1.5;
+	color: var(--color-text);
+}
+
+h2{
+	font-size: 3rem;
+	line-height: 1;
+	color: var(--color-text);
+}
+
+h3{
+	font-size: 2.5rem;
+	line-height: 1;
+	color: var(--color-text);
+}
+
+h4{
+	font-size: 2rem;
+	line-height: 1;
+	color: var(--color-text);
+}
+
+p, blockquote, small{
+	font-size: 1.6rem;
+	line-height: 1;
+	color: var(--color-text);
+}
+
+header, footer{
+	background-color: var(--color-primary); color: var(--color-surface); padding: var(--space-lg);
+}
+
+main{
+	padding: var(--space-md); background-color: var(--color-surface);
+}
+
+.box{
+	padding: var(--space-md);
+	margin: var(--space-sm);
+	border: 2px solid var(--color-muted);
+	border-radius: 8px;
+}
+
+
