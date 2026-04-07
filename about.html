@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
-	<meta name="description" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AboutMe</title>
 </head>
 
@@ -12,30 +12,34 @@
 		<h1>About Me</h1>
 	</header>	
 
-	<nav>
-		<ul>
-			<a href="index.html" class="active" >Home</a>
-			<a href="about.html" class="active">About Me</a>
-			<a href="skills.html" class="active">Skills</a>
-			<a href="academic.html" class="active">Academic Record</a>
-			<a href="projects.html" class="active">Projects</a>
-			<a href="contact.html" class="active">Contact Me</a>
-		</ul>
-	</nav>
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a class="active" href="about.html">About Me</a>
+		<a href="skills.html">Skills</a>
+		<a href="academic.html">Academic Record</a>
+		<a href="projects.html">Projects</a>
+		<a href="contact.html">Contact Me</a>
+	</div>
 
 	<main>
-		<section class="sidebar-layout">
+		<section>
 			<h2>My Background</h2>
-			<h3>Personal Journey</h3>
-			<p>I am a <b>dedicated</b> <strong>Software Engineering</strong> student in Universiti Teknologi Malaysia. Currently, I'm exploring further on the <abbr title="HyperText Markup Language">HTML</abbr> in the <em>SCSM2233-Cross-Platform Application Development</em> course. This skills would allow me to <mark>build</mark> and <mark>enhance</mark> accessible structures. Furthermore, <dfn>Web Accessibility</dfn> means to ensure everyone can navigate the internet with ease.</p>
+				<div class="card">
+					<h3>Personal Journey</h3>
+					<p>I am a <b>dedicated</b> <strong>Software Engineering</strong> student in Universiti Teknologi Malaysia. Currently, I'm exploring further on the <abbr title="HyperText Markup Language">HTML</abbr> in the <em>SCSM2233-Cross-Platform Application Development</em> course. This skills would allow me to <mark>build</mark> and <mark>enhance</mark> accessible structures. Furthermore, <dfn>Web Accessibility</dfn> means to ensure everyone can navigate the internet with ease.</p>
+				</div>
 
-			<h4>Favourite Quote</h4>
-			<blockquote cite="https://artofpoets.com/wp-content/uploads/2023/11/And-they-planned-and-Allah-also-planned-and-Allah-is-the-best-of-planners-Quran-3_54.jpg">
-				"And they planned and Allah also planned and Allah is the best of planners."
-			</blockquote>
-			<p>— <cite> QURAN 3:54</cite></p>
-
-			<p>Interesting chemical formula: H<sub>2</sub>O .<br>Any references need to be marked like this<sup>[1]</sup>.</p>
+				<div class="card">
+					<h4>Favourite Quote</h4>
+					<blockquote cite="https://artofpoets.com/wp-content/uploads/2023/11/And-they-planned-and-Allah-also-planned-and-Allah-is-the-best-of-planners-Quran-3_54.jpg">
+					"And they planned and Allah also planned and Allah is the best of planners."
+					</blockquote>
+					<p>— <cite> QURAN 3:54</cite></p>
+				</div>
+			
+				<div class="card">
+					<p>Interesting chemical formula: H<sub>2</sub>O .<br>Any references need to be marked like this<sup>[1]</sup>.</p>
+				</div>
 		</section>
 	</main>
 
