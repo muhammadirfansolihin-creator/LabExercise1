@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
-	<meta name="description" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MyPortfolio</title>
 </head>
 
 <body>
 	<header>
-		<h1>MUHAMMAD IRFAN SOLIHIN BIN MOHD NAZRI</h1>
-		<p>Student</p>
+		<h1>Welcome to My Portfolio</h1>
 	</header>
 
-	<nav>
-		<ul>
-			<a href="index.html">Home</a>
-			<a href="about.html">About Me</a>
-			<a href="skills.html">Skills</a>
-			<a href="academic.html">Academic Record</a>
-			<a href="projects.html">Projects</a>
-			<a href="contact.html">Contact Me</a>
-		</ul>
-	</nav>
+	<div class="navbar">
+		<a class="active" href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="skills.html">Skills</a>
+		<a href="academic.html">Academic Record</a>
+		<a href="projects.html">Projects</a>
+		<a href="contact.html">Contact Me</a>
+	</div>
+	
 
 	<main>
 		<section>
-		<h2>Welcome to my Portfolio</h2>
-		<figure>
-			<img src="C:\Users\TY Computers\OneDrive\Documents\Y2S4\CPD\LabExercise\[1]\LabExercise1\gambar passport.jpeg" width="250" height="300">
-			<figcaption><i>Figure 1</i>:Profile photo of Muhammad Irfan Solihin</figcaption>
-		</figure>
+			<div class="card">
+				<h2>Get to Know Me</h2>
+				<p>My name is Muhammad Irfan Solihin and you can call me Irfan. I was born in Tawau, Sabah but my hometown is in Marang, Terengganu. Before entering UTM, I was in Kolej Mara Kuala Nerang (KMKN) for my Foundation in Engineering and Technology. Now I'm in Year 2 as a Software Engineering student.</p>
+			</div>
+
+			<div class="card">
+				<figure class="img">
+					<img src="C:\Users\TY Computers\OneDrive\Documents\Y2S4\CPD\LabExercise\[1]\LabExercise1\gambar passport.jpeg" alt="Profile Photo" width="100%">
+				</figure>
+				<div class="container">
+					<h4><b>Irfan Solihin</b></h4>
+					<p>Student</p>
+				</div>
+			</div>
+		
+		
 		</section>
 
 	</main>

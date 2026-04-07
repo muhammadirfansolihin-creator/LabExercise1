@@ -1,73 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
-	<meta name="description" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact</title>
 </head>
 
 <body>
-	<nav></nav>
+	<header>
+		<h1>Contact Me</h1>
+	</header>
+
+	<div class="navbar">
+		<a  href="index.html">Home</a>
+		<a href="about.html">About Me</a>
+		<a href="skills.html">Skills</a>
+		<a href="academic.html">Academic Record</a>
+		<a href="projects.html">Projects</a>
+		<a class="active" href="contact.html">Contact Me</a>
+	</div>
 
 	<main>
-		<section>
-			<h2>Contact</h2>
-			<form action="#" method="post">
-				<fieldset style="border: 2px solid navy; padding: 10px;">
-					<legend>Contact Information</legend>
+    <section class="container">
+        <h2>Get In Touch</h2>
+        
+        <form action="#" method="post" class="contact-form">
+            <fieldset>
+                <legend>Contact Information</legend>
 
-					<label for="name">Name:</label>
-					<input type="text" id= "name" name="name" required maxlength="60" placeholder="Your Name" style="font-size: 14px;">
-					<br><br>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required maxlength="60" placeholder="Your Name">
+                </div>
 
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required placeholder="youremail@gmail.com">
-					<br><br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="youremail@gmail.com">
+                </div>
 
-					<label for="phone">Phone Number:</label>
-					<input type="tel" id="phone" name="phone" maxlength="8" placeholder="e.g. +60********">
-					<br><br>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" maxlength="10" placeholder="e.g. 12345678">
+                </div>
 
-					<label for="date">Date:</label>
-					<input type="date" id="date" name="date">
-					<br><br>
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
 
-					<label for="range">Rating (0-10):</label>
-					<input type="range" id="range" name="range" min="0" max="10" style="background-color: #f0f0f0;">
-					<br><br>
+                <div class="form-group">
+                    <label for="range">Rating (0-10):</label>
+                    <input type="range" id="range" name="range" min="0" max="10">
+                </div>
 
-					<p>Interest:</p>
-					<input type="checkbox" id="cb1" name="interest" value="web"> <label for="cb1">Web Developer</label>
-					<input type="checkbox" id="cb2" name="interest" value="data"> <label for="cb2">Data Science</label>
-					<input type="checkbox" id="cb3" name="interest" value="ai"> <label for="cb3">AI</label>
-					<br><br>
+                <div class="form-group checkbox-group">
+                    <p>Interest:</p>
+                    <input type="checkbox" id="cb1" name="interest" value="web"> <label for="cb1">Web Developer</label>
+                    <input type="checkbox" id="cb2" name="interest" value="data"> <label for="cb2">Data Science</label>
+                    <input type="checkbox" id="cb3" name="interest" value="ai"> <label for="cb3">AI</label>
+                </div>
 
-					<p>Contact Preferences</p>
-					<input type="radio" id="r1" name="pref" value="email"> <label for="r2">Email</label>
-					<input type="radio" id="r1" name="pref" value="phone"> <label for="r2">Phone</label>
-					<input type="radio" id="r3" name="pref" value="none"> <label for="r3">N/A</label>
-					<br><br>
+                <div class="form-group radio-group">
+                    <p>Contact Preferences:</p>
+                    <input type="radio" id="r1" name="pref" value="email"> <label for="r1">Email</label>
+                    <input type="radio" id="r2" name="pref" value="phone"> <label for="r2">Phone</label>
+                    <input type="radio" id="r3" name="pref" value="none"> <label for="r3">N/A</label>
+                </div>
 
-					<label for="subj">Subject:</label>
-					<select id="subj" name="subj">
-						<optgroup label="Subject">
-							<option value="cpad">SCSM2223</option>
-							<option value="ad1">SCSE2243</option>
-							<option value="sda">SCSE2233</option>
-						</optgroup>
-					</select>
-					<br><br>
+                <div class="form-group">
+                    <label for="subj">Subject:</label>
+                    <select id="subj" name="subj">
+                        <optgroup label="Course Codes">
+                            <option value="cpad">SCSM2223</option>
+                            <option value="ad1">SCSE2243</option>
+                            <option value="sda">SCSE2233</option>
+                        </optgroup>
+                    </select>
+                </div>
 
-					<label for="message">Note:</label><br>
-					<textarea id="message" name="message" style="font-size:16px;"></textarea>
-					<br><br>
+                <div class="form-group">
+                    <label for="message">Note:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+                </div>
 
-					<button type="submit">Submit Form</button>
-
-				</fieldset>
-			</form>
-		</section>
-	</main>	
-
+                <button type="submit">Submit Form</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+<footer></footer>
 </body>
 </html>
